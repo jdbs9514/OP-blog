@@ -25,15 +25,6 @@ OPTIONAL SECTIONS:
 After you're finished please remove all the comments and instructions!
 -->
 
-<div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
-
 <!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
@@ -60,17 +51,17 @@ After you're finished please remove all the comments and instructions!
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 [your_project_name] <a name="about-project"></a>
+# 📖 [OP-blog] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
+>**[OP-blog]** is a blog for all the fans of One Piece anime, build with Ruby on Rails.
 
-**[your_project__name]** is a...
+
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
+> <img alt="Run on Rails Badge" src= "https://img.shields.io/badge/Ruby_on_Rails-CC0000?style=for-the-badge&logo=ruby-on-rails&logoColor=white"><br>
 
 <details>
   <summary>Client</summary>
@@ -82,7 +73,7 @@ After you're finished please remove all the comments and instructions!
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li><a href="https://ruby.com/">Ruby</a></li>
   </ul>
 </details>
 
@@ -99,9 +90,9 @@ After you're finished please remove all the comments and instructions!
 
 > Describe between 1-3 key features of the application.
 
-- **[key_feature_1]**
-- **[key_feature_2]**
-- **[key_feature_3]**
+- **[Wsl]**
+- **[bundle install]**
+- **[Ruby on Rails]**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -119,13 +110,13 @@ After you're finished please remove all the comments and instructions!
 
 ## 💻 Getting Started <a name="getting-started"></a>
 
-> Describe how a new developer could make use of your project.
+> "For developers" if you want to use this code you have to install Wsl first for access. if you don't have problems with Ruby on Rails windows installation then, go ahead!
 
 To get a local copy up and running, follow these steps.
 
 ### Prerequisites
 
-In order to run this project you need:
+In order to run this project you need: React, Ruby, Postgresql.
 
 <!--
 Example command:
@@ -137,7 +128,7 @@ Example command:
 
 ### Setup
 
-Clone this repository to your desired folder:
+Clone this repository to your desired folder: https://github.com/jdbs9514/OP-blog.git
 
 <!--
 Example commands:
@@ -152,26 +143,25 @@ Example commands:
 
 Install this project with:
 
-<!--
-Example command:
+
 
 ```sh
-  cd my-project
-  gem install
+  git clone https://github.com/jdbs9514/OP-blog.git
+  cd OP-blog
+  bundle install
 ```
---->
+
 
 ### Usage
 
 To run the project, execute the following command:
 
-<!--
-Example command:
+
 
 ```sh
   rails server
 ```
---->
+-
 
 ### Run tests
 
@@ -205,17 +195,17 @@ Example:
 
 > Mention all of the collaborators of this project.
 
-👤 **Author1**
+👤 **Josué Benavides**
+
+- GitHub: [@jdbs9514](https://github.com/jdbs9514)
+- Twitter: [@JODA1015](https://twitter.com/JODA1015)
+- LinkedIn: [Josué](https://linkedin.com/in/macoin)
+
+<!-- 👤 **Author2**
 
 - GitHub: [@githubhandle](https://github.com/githubhandle)
 - Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle) -->
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
