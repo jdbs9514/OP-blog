@@ -37,4 +37,18 @@ RSpec.describe Post, type: :model do
   it 'test if likes_counter = 5' do
     expect(post_seven.likes_counter).to be_eql 5
   end
+
+  it 'test show the last 5 comments' do
+    user3 = User.new(name: 'Antonella', post_counter: 0)
+    user3.save
+    post9 = Post.new(title: 'Abcdefg', text: 'Testing', author: user3, comments_counter: 0,
+                     likes_counter: 0)
+    post9.save
+
+    6.times do
+      Comment.new(author: user3, post: post9, text: 'Testing')
+    end
+
+    expect(post9.recents_five_comments.length).to be <= 5
+  end
 end
