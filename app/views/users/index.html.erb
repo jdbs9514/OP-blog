@@ -1,3 +1,28 @@
-<% 3.times do %>
-  <h2>Users index view</h2>
-<% end %>
+<main>
+  <section class="welcome">
+    <h1>Welcome to Dario's Blog App</h1>
+  </section>
+  <section class="users-list">
+    <h2>List of users</h2>
+    <% if @users.empty? %>
+      <h3>Currently there are not users in the database</h3>
+    <% else %>
+      <% @users.each do |user| %>
+        <div class="users-section">
+          <%= link_to user_path(user.id) do %>
+            <div class="user-card">
+              <div class="image-container">
+                <img src="<%=user.photo || image_url('user_icon.png') %>" alt="Image of user <%=user.name %>" title="<%=user.name %>" class="user-image">
+              </div>
+              <div class="name-counter"
+                <h4><%= user.name %></h4>
+                <p>Number of posts: <%= user.post_counter %></p>
+              </div>
+            </div>
+          <% end %>
+          
+        </div>
+      <% end %>
+    <% end %>
+  </section>
+</main>
