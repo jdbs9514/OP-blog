@@ -1,3 +1,47 @@
-<% 5.times do%>
-  <h2>Post index view</h2>
-<% end %>
+<main>
+  <section class ="post-section">
+    <h2>Post information for user</h2>
+    <article class="user-info">
+      <div class="user-card">
+        <div class="img-container">
+          <img src="<%=@user.photo || image_url('user_icon.png') %>" alt="Image of user <%=@user.name %>" title="<%=@user.name %>" class="user-image">
+        </div>
+        <div class="name-counter">
+        <h3><%= @user.name%></h3>
+        <p>Number of posts: <%= @user.post_counter%></p>
+        </div>
+      </div>
+    </article>
+
+    <article class="users-posts">
+      <% if @posts.empty? %>
+        <h3>Currently there are not posts in the database for this user</h3>
+      <% else %>
+        <% @posts.each do |post| %>
+          <div class="posts-section">
+            <div class="posts-card">
+              
+            <a href='posts/<%=post.id%>'><h4>Post #: <%= post.id %> - <%= post.title %></a></h4>
+        <p class="post-text" maxlength= 150><%= post.text %></p>
+        <p class="post-comments-likes">
+        Comments: <%= post.comments_counter %> - Likes: <%= post.likes_counter %>
+      </p>
+            
+            
+            </div>
+            <ul class="five-comments">
+              <% post.recents_five_comments.each do |comment| %>
+                <li class="comment"><%= comment.author.name %>: <%= comment.text %></li>
+              <% end %>
+            </ul>
+          </div>
+          
+       <% end %>
+     <% end %>
+    </article>
+
+    <button>
+      Pagination
+    </button>
+  </section>
+</main>
