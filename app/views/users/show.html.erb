@@ -42,6 +42,14 @@
     <%= link_to user_posts_path(@user) do %>
       <button class="see-all-button">See all posts</button>
     <% end %>
+
+    <%= link_to new_user_post_path(@user) do %>
+      <button class="see-all-button">Create a new post</button>
+    <% end %>
+
+    <%= link_to users_path do %>
+      <button class="see-all-button">Back to users list</button>
+    <% end %>
     
   </section>
 </main>
