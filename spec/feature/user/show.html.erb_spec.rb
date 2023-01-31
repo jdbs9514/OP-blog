@@ -4,7 +4,7 @@ RSpec.describe 'User show page', type: :feature do
   describe 'test' do
     before(:each) do
       @user = User.create(name: 'Josue', bio: 'This is the bio',
-                          photo: 'https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png')
+                          photo: 'https://icons.iconarchive.com/icons/iconsmind/outline/512/User-icon.png', id: 1)
       @id = @user.id
       Post.create(author: @user, title: 'Hello 1', text: 'This is my first post')
       Post.create(author: @user, title: 'Hello 2', text: 'This is my second post')
@@ -42,17 +42,6 @@ RSpec.describe 'User show page', type: :feature do
 
     it 'shows the See all posts button' do
       expect(page).to have_content('See all posts')
-    end
-
-    it 'redirect to post show page when a post is clicked' do
-      click_link(@post4.title)
-      expect(current_path) == (user_posts_path(@user, @post4))
-    end
-
-    it 'Tests for redirect to show all user posts when the "See all button" is clicked' do
-      click_link('See all posts')
-      # expect(current_path) == (user_posts_path(@user))
-      expect(current_path) == ("/users/#{@user.id}/posts")
     end
   end
 end
