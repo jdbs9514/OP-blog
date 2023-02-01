@@ -206,7 +206,7 @@ Example:
 
 - GitHub: [@Efiamotu-1](https://github.com/Efiamotu-1)
 - Twitter: [@EFYAMOTU](https://twitter.com/EFYAMOTU)
-- LinkedIn: [[Habeeb Efiamotu Musa](https://www.linkedin.com/in/musa-habeeb/)
+- LinkedIn: [[Habeeb Efiamotu Musa Owolewa](https://www.linkedin.com/in/musa-habeeb/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
