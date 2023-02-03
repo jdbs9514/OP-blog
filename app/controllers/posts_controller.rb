@@ -4,6 +4,11 @@ class PostsController < ApplicationController
   def index
     @user = User.includes(:posts).find(params[:user_id])
     @posts = @user.posts
+
+    respond_to do |format|
+      format.html
+      format.json { render json: @posts }
+    end
   end
 
   def show
@@ -34,6 +39,10 @@ class PostsController < ApplicationController
     Post.destroy(params[:id])
     redirect_to user_path(current_user)
     flash[:success] = 'The post was successfully destroyed.'
+  end
+
+  rescue_from CanCan::AccessDenied do
+    redirect_to '/sign_in'
   end
 
   # private

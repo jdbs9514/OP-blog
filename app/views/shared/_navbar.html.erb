@@ -1,0 +1,20 @@
+<nav>
+  <div class="navbar">
+      <% if user_signed_in? %>
+       
+          <%= button_to 'Sign out', destroy_user_session_path, method: :delete, class:"navbar-button-link" %>
+        
+          <%= link_to 'Edit', edit_user_registration_path, class:"navbar-button-link" %>
+
+          <p>Current user:             <%= current_user.name %></p>
+       
+      <% else %>
+       
+          <%= link_to 'Register', new_user_registration_path, class:"navbar-button-link" %>
+       
+   
+          <%= link_to 'Sign in', new_user_session_path, class:"navbar-button-link" %>
+       
+      <% end %>
+  </div>
+</nav>
