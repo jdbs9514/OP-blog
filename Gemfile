@@ -7,6 +7,10 @@ gem 'devise'
 
 gem 'cancancan'
 
+gem 'rack-cors'
+
+gem 'devise-jwt'
+
 # Rubocop
 gem 'rubocop', '>= 1.0', '< 2.0'
 
