@@ -3,9 +3,6 @@ class CommentsController < ApplicationController
     @user = current_user
     @post = Post.find(params[:post_id])
     @comments = Comment.new
-    # respond_to do |format|
-    #   format.html { render :new, locals: { comment: } }
-    # end
   end
 
   def create
